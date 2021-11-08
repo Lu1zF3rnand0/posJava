@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class AppagendamentoApplication {
-    //teste
+    //test
 	public static void main(String[] args) {
 		SpringApplication.run(AppagendamentoApplication.class, args);
 	}
