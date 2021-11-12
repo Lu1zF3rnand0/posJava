@@ -7,6 +7,7 @@ public class Agendamento {
 
 	private Integer id;
 	private LocalDateTime data;
+	
 	// criar mais 2 atributos
 
 	private Cliente cliente;
