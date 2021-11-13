@@ -10,7 +10,7 @@ public class Agendamento {
 	private LocalDateTime data;
 	private String tipo;
 	private String Transportador;
-	private Date dataSolicitada;
+	private LocalDateTime dataSolicitada;
 	private Cliente cliente;
 	private List<Carga> cargas;
 	
@@ -36,12 +36,12 @@ public class Agendamento {
 	}
 
 
-	public Date getDataSolicitada() {
+	public LocalDateTime getDataSolicitada() {
 		return dataSolicitada;
 	}
 
 
-	public void setDataSolicitada(Date dataSolicitada) {
+	public void setDataSolicitada(LocalDateTime dataSolicitada) {
 		this.dataSolicitada = dataSolicitada;
 	}
 

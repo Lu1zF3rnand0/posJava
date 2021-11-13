@@ -33,7 +33,7 @@ public class AgendamentoTest {
 		Agendamento agendamento = new Agendamento();
 		agendamento.setId(1);
 		agendamento.setTipo("Importacao");
-		//agendamento.setDataSolicitada(10-10-2010);
+		//agendamento.setDataSolicitada();
 		agendamento.setTransportador("TestTransp");
 		agendamento.setCliente(cliente);
 		agendamento.setCargas(cargas);
