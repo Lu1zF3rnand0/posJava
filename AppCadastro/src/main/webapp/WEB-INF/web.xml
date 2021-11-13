@@ -11,22 +11,12 @@
   </welcome-file-list>
   <servlet>
     <description></description>
-    <display-name>ClienteCOntroller</display-name>
-    <servlet-name>ClienteCOntroller</servlet-name>
-    <servlet-class>controller.ClienteCOntroller</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>ClienteCOntroller</servlet-name>
-    <url-pattern>/ClienteCOntroller</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
     <display-name>ClienteController</display-name>
     <servlet-name>ClienteController</servlet-name>
     <servlet-class>controller.ClienteController</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>ClienteController</servlet-name>
-    <url-pattern>/ClienteController</url-pattern>
+    <url-pattern>/cliente</url-pattern>
   </servlet-mapping>
 </web-app>
