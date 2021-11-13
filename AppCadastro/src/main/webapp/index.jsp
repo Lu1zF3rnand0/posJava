@@ -41,14 +41,13 @@
 
 	<div class="container mt-3">
 	  <h2>Cadastramento de Clientes</h2>
-	  <h2>Total de Clientes: <%=lista.size()%></h2>
+	  
 	  
 	  <form action="cliente" method="get">
 	    <button type="submit" class="btn btn-primary">Novo</button>
 	  </form>
 	  
 	  <hr>
-
 		<table class="table table-striped">
 		    <thead>
 		      <tr>
@@ -58,13 +57,16 @@
 		      </tr>
 		    </thead>
 		    <tbody>
-		      <%for(Cliente a : lista){%>
+		      <%
+		      if (lista != null) {
+		      for(Cliente a : lista){
+		      %>
 		      <tr>
 		        <td><%=a.getNome()%></td>
 		        <td><%=a.getCpf()%></td>
 		        <td><%=a.getTelefone()%></td>
 		      </tr>
-		      <%}%>
+		      <%}}%>
 		    </tbody>
 	  	</table>	  	  
 	</div>
