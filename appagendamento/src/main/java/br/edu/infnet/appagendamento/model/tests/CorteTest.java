@@ -5,7 +5,7 @@ import java.util.List;
 
 import br.edu.infnet.appagendamento.model.domain.Agendamento;
 import br.edu.infnet.appagendamento.model.domain.Barba;
-import br.edu.infnet.appagendamento.model.domain.Bigode;
+import br.edu.infnet.appagendamento.model.domain.Sobrancelha;
 import br.edu.infnet.appagendamento.model.domain.Cabelo;
 import br.edu.infnet.appagendamento.model.domain.Cliente;
 import br.edu.infnet.appagendamento.model.domain.Corte;
@@ -19,7 +19,7 @@ public class CorteTest {
 	Cabelo cabelo = new Cabelo();
 	//TODO Preencher os atributos
 	
-	Bigode bigode = new Bigode();
+	Sobrancelha bigode = new Sobrancelha();
 	//TODO Preencher os atributos
 	
 	List<Corte> cortes = new ArrayList<Corte>();
