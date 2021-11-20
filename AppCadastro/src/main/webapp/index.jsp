@@ -38,14 +38,12 @@
 	<%
 	List<Cliente> lista = (List<Cliente>)request.getAttribute("aLista");
 	%>	
+	
+<hr>
 
 	<div class="container mt-3">
-	  <h2>Cadastramento de Clientes</h2>
+	  <h2>Clientes Cadastrados</h2>
 	  
-	  
-	  <form action="cliente" method="get">
-	    <button type="submit" class="btn btn-primary">Novo</button>
-	  </form>
 	  
 	  <hr>
 		<table class="table table-striped">
