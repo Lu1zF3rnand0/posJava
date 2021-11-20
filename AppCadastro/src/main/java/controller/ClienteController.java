@@ -33,7 +33,9 @@ public class ClienteController extends HttpServlet {
 		request.setAttribute("oNome", cliente.getNome());
 		request.setAttribute("oCpf", cliente.getCpf());
 		request.setAttribute("oTelefone", cliente.getTelefone());
+		request.setAttribute("aLista", ClienteRepository.obterLista());
 		
+		this.doGet(request, response);
 		
 	}
 
