@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>AppMIT</title>
+<title>AppCadastroCliente</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
@@ -16,12 +16,12 @@
 	  <form action="cliente" method="post">
 	    <div class="mb-3 mt-3">
 	      <label>Nome:</label>
-	      <input type="text" class="form-control" placeholder="Entre com o seu nome" name="nome" value="Elberth L C Moraes">
+	      <input type="text" class="form-control" placeholder="Entre com o seu nome" name="nome" value="Cliente">
 	    </div>
 
 	    <div class="mb-3 mt-3">
 	      <label>CPF:</label>
-	      <input type="email" class="form-control" placeholder="Entre com o seu e-mail" name="cpf" value="123.456.789-12">
+	      <input type="text" class="form-control" placeholder="Entre com o seu e-mail" name="cpf" value="123.456.789-12">
 	    </div>
 
 	    <div class="mb-3 mt-3">
