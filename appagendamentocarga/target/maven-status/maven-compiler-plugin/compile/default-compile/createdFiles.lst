@@ -8,7 +8,9 @@ br\edu\infnet\appagendamentocarga\model\tests\VeiculoTest.class
 br\edu\infnet\appagendamentocarga\AppagendamentocargaApplication.class
 br\edu\infnet\appagendamentocarga\model\domain\Carga.class
 br\edu\infnet\appagendamentocarga\model\tests\AgendamentoTest.class
+br\edu\infnet\appagendamentocarga\controller\AcessoController.class
 br\edu\infnet\appagendamentocarga\model\domain\CargaSolta.class
 br\edu\infnet\appagendamentocarga\model\tests\CargaTest.class
+br\edu\infnet\appagendamentocarga\model\domain\Aluno.class
 br\edu\infnet\appagendamentocarga\model\tests\ClienteTest.class
 br\edu\infnet\appagendamentocarga\model\domain\Cliente.class

@@ -8,11 +8,10 @@
 </head>
 <body>
 
+	<div class="container mt-3">
+	  <h2>O aluno ${nome} foi cadastrado com sucesso!!!</h2>
 
-<div class="container mt-3">
-  <h2>Cadastramento realizado com sucesso!!!</h2>
-  
-  <form action="/aluno" method="get">
+  <form action="/alunos" method="get">
     <button type="submit" class="btn btn-primary">Voltar</button>
   </form>
 </div>
