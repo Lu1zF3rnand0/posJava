@@ -5,6 +5,34 @@ public class Cliente {
 	private String nome;
 	private String cnpj;
 	private String telefone;
+	private String email;
+	
+	
+	
+	public Cliente() {
+		
+	}
+	
+	public Cliente(String nome, String cnpj, String telefone, String email) {
+		this.nome= nome;
+		this.cnpj = cnpj;
+		this.telefone = telefone;
+		this.email = email;
+	}
+	
+	@Override
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		sb.append(this.nome);
+		sb.append(',');
+		sb.append(this.cnpj);
+		sb.append(',');
+		sb.append(this.telefone);
+		sb.append(',');
+		sb.append(this.email);
+		
+		return sb.toString();
+	}
 	
 	
 	public Integer getId() {
@@ -31,6 +59,14 @@ public class Cliente {
 	public void setTelefone(String telefone) {
 		this.telefone = telefone;
 	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	
+	
 	
 	
 

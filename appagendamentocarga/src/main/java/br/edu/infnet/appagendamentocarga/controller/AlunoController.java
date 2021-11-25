@@ -14,7 +14,9 @@ import br.edu.infnet.appagendamentocarga.model.domain.Aluno;
 @Controller
 public class AlunoController {
 
-
+	List<Aluno> alunos = new ArrayList<Aluno>();
+			
+			
 	@GetMapping(value = "/aluno")
 	public String telaCadatro() {
 		
@@ -23,20 +25,13 @@ public class AlunoController {
 	
 	@GetMapping(value = "/alunos")
 	public String telaLista(Model model) {
-		List<Aluno> alunos = new ArrayList<Aluno>(
-					Arrays.asList(
-								new Aluno("Luiz", "Luiz@luiz.com"),
-								new Aluno("Marcos", "Marcos@marcos.com"),
-								new Aluno("Ana", "Ana@ana.com")
-							)
-				);
 		model.addAttribute("lista", alunos);
 		return "aluno/lista";
 	}
 	
 	@PostMapping(value = "/aluno/incluir")
 	public String incluir(Model model, Aluno aluno) {
-		
+		alunos.add(aluno);
 		model.addAttribute("nome", aluno.getNome());
 		return "confirmacao";
 	}

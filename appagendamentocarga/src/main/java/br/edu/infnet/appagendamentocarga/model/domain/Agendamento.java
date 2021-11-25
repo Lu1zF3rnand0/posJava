@@ -1,7 +1,7 @@
 package br.edu.infnet.appagendamentocarga.model.domain;
 
 import java.time.LocalDateTime;
-import java.util.Date;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 public class Agendamento {
@@ -9,11 +9,22 @@ public class Agendamento {
 	private Integer id;
 	private LocalDateTime data;
 	private String tipo;
-	private String Transportador;
-	private LocalDateTime dataSolicitada;
+	private String transportador;
 	private Cliente cliente;
 	private List<Carga> cargas;
 	
+	
+	@Override
+	public String toString() {
+		DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
+		return String.format("%s, %s, %s, %s, %d",
+				this.data.format(formato), this.tipo, this.transportador, this.cliente.getNome(),  this.cargas.size());	
+	}
+	
+	
+	public Agendamento() {
+		data = LocalDateTime.now();
+	}
 	
 	
 	public String getTipo() {
@@ -27,29 +38,13 @@ public class Agendamento {
 
 
 	public String getTransportador() {
-		return Transportador;
+		return transportador;
 	}
 
 
 	public void setTransportador(String transportador) {
-		Transportador = transportador;
+		this.transportador = transportador;
 	}
-
-
-	public LocalDateTime getDataSolicitada() {
-		return dataSolicitada;
-	}
-
-
-	public void setDataSolicitada(LocalDateTime dataSolicitada) {
-		this.dataSolicitada = dataSolicitada;
-	}
-
-
-	public Agendamento() {
-		data = LocalDateTime.now();
-	}
-
 	
 	public Integer getId() {
 		return id;
