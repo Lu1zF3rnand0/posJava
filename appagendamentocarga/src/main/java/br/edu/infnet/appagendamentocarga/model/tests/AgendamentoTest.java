@@ -14,9 +14,9 @@ public class AgendamentoTest {
 
 	public static void main(String[] args) {
 		
-		Conteiner conteiner = new Conteiner();
-		CargaSolta cargaSolta = new CargaSolta();
-		Veiculo veiculo = new Veiculo();
+		Conteiner conteiner = new Conteiner(null, null, null);
+		CargaSolta cargaSolta = new CargaSolta(null, null, null);
+		Veiculo veiculo = new Veiculo(null, null, null);
 		
 		List<Carga> cargas = new ArrayList<Carga>();
 		cargas.add(conteiner);
@@ -28,12 +28,12 @@ public class AgendamentoTest {
 		cliente.setCnpj("12.123.456/7890-12");
 		cliente.setNome("MSC");
 		cliente.setTelefone("21 1234-5678");
+		cliente.setEmail("cliente@cliente.com");
 		
 		
 		Agendamento agendamento = new Agendamento();
 		agendamento.setId(1);
 		agendamento.setTipo("Importacao");
-		//agendamento.setDataSolicitada();
 		agendamento.setTransportador("TestTransp");
 		agendamento.setCliente(cliente);
 		agendamento.setCargas(cargas);

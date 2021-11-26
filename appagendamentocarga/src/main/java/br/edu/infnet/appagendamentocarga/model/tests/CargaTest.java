@@ -8,11 +8,11 @@ public class CargaTest {
 
 	public static void main(String[] args) {
 		
-		Conteiner conteiner = new Conteiner();
+		Conteiner conteiner = new Conteiner(null, null, null);
 		
-		CargaSolta cargaSolta = new CargaSolta();
+		CargaSolta cargaSolta = new CargaSolta(null, null, null);
 		
-		Veiculo veiculo = new Veiculo();
+		Veiculo veiculo = new Veiculo(null, null, null);
 
 	}
 

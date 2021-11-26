@@ -1,38 +1,47 @@
 package br.edu.infnet.appagendamentocarga.model.domain;
 
-import java.util.Date;
 
 public abstract class Carga {
 	private Integer id;
 	private String navio;
-	private Date dataMovimentacao; 
+	private String documento; 
 	private String porto;
 	
+	
+	public Carga(String navio, String documento, String porto) {
+		this.navio = navio;
+		this.documento = documento;
+		this.porto = porto; 
+	}
+	
+	
+	@Override
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		sb.append(this.navio);
+		sb.append(',');
+		sb.append(this.documento);
+		sb.append(',');
+		sb.append(this.porto);
+		return sb.toString();
+	}
+	
+	public abstract String retornaNavio(Integer id);
 	
 	public Integer getId() {
 		return id;
 	}
-	public void setId(Integer id) {
-		this.id = id;
-	}
 	public String getNavio() {
 		return navio;
 	}
-	public void setNavio(String navio) {
-		this.navio = navio;
-	}
-	public Date getDataMovimentacao() {
-		return dataMovimentacao;
-	}
-	public void setDataMovimentacao(Date dataMovimentacao) {
-		this.dataMovimentacao = dataMovimentacao;
+	public String getDocumento() {
+		return documento;
 	}
 	public String getPorto() {
 		return porto;
 	}
-	public void setPorto(String porto) {
-		this.porto = porto;
-	}
+	
+	
 	
 	
 }

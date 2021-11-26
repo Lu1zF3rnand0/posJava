@@ -6,6 +6,17 @@ public class CargaSolta extends Carga {
 	private boolean imo;
 	private boolean oog;
 	
+	@Override
+	public String retornaNavio(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	public CargaSolta(String navio, String documento, String porto) {
+		super(navio, documento, porto);
+		// TODO Auto-generated constructor stub
+	}
+	
 	
 	public String getMercadoria() {
 		return mercadoria;
