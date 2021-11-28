@@ -1,5 +1,8 @@
 package br.edu.infnet.appagendamentocarga.model.domain;
 
+import br.edu.infnet.appagendamentocarga.exceptions.ChassiInvalidoException;
+import br.edu.infnet.appagendamentocarga.exceptions.PortoInvalidoException;
+
 public class Veiculo extends Carga {
 	
 
@@ -13,17 +16,32 @@ public class Veiculo extends Carga {
 		return null;
 	}
 	
-	public Veiculo(String navio, String documento, String porto) {
+	public Veiculo(String navio, String documento, String porto) throws PortoInvalidoException {
 		super(navio, documento, porto);
+		
+		if (porto.length() != 5) {
+			throw new PortoInvalidoException("Código do porto inválido!");
+		}
+	}
+	
+	public Veiculo() {
 		// TODO Auto-generated constructor stub
 	}
+	
 	
 	public String getChassi() {
 		return chassi;
 	}
-	public void setChassi(String chassi) {
+	public void setChassi(String chassi) throws ChassiInvalidoException {
+			
+		if (chassi.length() != 17) {
+			throw new ChassiInvalidoException("Chassi inválido!");
+		}
+		
 		this.chassi = chassi;
 	}
+	
+	
 	public String getMontadora() {
 		return montadora;
 	}

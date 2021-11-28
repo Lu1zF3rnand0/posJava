@@ -5,7 +5,7 @@ import br.edu.infnet.appagendamentocarga.model.domain.Conteiner;
 public class ConteinerTest {
 
 	public static void main(String[] args) {
-		Conteiner conteiner = new Conteiner(null, null, null);
+		Conteiner conteiner = new Conteiner();
 
 	}
 

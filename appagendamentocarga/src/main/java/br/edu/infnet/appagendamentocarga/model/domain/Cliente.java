@@ -24,11 +24,11 @@ public class Cliente {
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
 		sb.append(this.nome);
-		sb.append(',');
+		sb.append(';');
 		sb.append(this.cnpj);
-		sb.append(',');
+		sb.append(';');
 		sb.append(this.telefone);
-		sb.append(',');
+		sb.append(';');
 		sb.append(this.email);
 		
 		return sb.toString();

@@ -1,6 +1,5 @@
 package br.edu.infnet.appagendamentocarga.model.domain;
 
-
 public abstract class Carga {
 	private Integer id;
 	private String navio;
@@ -11,17 +10,22 @@ public abstract class Carga {
 	public Carga(String navio, String documento, String porto) {
 		this.navio = navio;
 		this.documento = documento;
-		this.porto = porto; 
+		this.porto = porto;
 	}
+	
+	public Carga() {
+		// TODO Auto-generated constructor stub
+	}
+	
 	
 	
 	@Override
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
 		sb.append(this.navio);
-		sb.append(',');
+		sb.append(';');
 		sb.append(this.documento);
-		sb.append(',');
+		sb.append(';');
 		sb.append(this.porto);
 		return sb.toString();
 	}
@@ -40,8 +44,8 @@ public abstract class Carga {
 	public String getPorto() {
 		return porto;
 	}
-	
-	
+
+	 
 	
 	
 }
