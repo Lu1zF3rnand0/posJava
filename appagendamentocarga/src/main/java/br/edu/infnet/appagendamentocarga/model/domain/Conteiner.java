@@ -10,9 +10,8 @@ public class Conteiner extends Carga {
 	private String status;
 
 	@Override
-	public String retornaNavio(Integer id) {
-		// TODO Auto-generated method stub
-		return null;
+	public String retornaNavio() {
+		return "O navio do conteiner "+this.numero+" é o "+super.getNavio()+ "!";
 	}
 
 	public Conteiner(String navio, String documento, String porto) throws PortoInvalidoException {
@@ -21,6 +20,18 @@ public class Conteiner extends Carga {
 		if (porto.length() != 5) {
 			throw new PortoInvalidoException("Código do porto inválido!");
 		}
+	}
+	
+	@Override
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		sb.append(";");
+		sb.append(this.numero);
+		sb.append(";");
+		sb.append(this.tamanho);
+		sb.append(";");
+		sb.append(this.status);
+		return super.toString()+sb.toString();
 	}
 
 	public Conteiner() {

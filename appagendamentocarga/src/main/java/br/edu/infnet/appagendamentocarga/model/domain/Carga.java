@@ -6,15 +6,17 @@ public abstract class Carga {
 	private String documento; 
 	private String porto;
 	
+	protected static int cont;
 	
 	public Carga(String navio, String documento, String porto) {
+		this();
 		this.navio = navio;
 		this.documento = documento;
 		this.porto = porto;
 	}
-	
+	 
 	public Carga() {
-		// TODO Auto-generated constructor stub
+		this.id = cont++;
 	}
 	
 	
@@ -23,14 +25,14 @@ public abstract class Carga {
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
 		sb.append(this.navio);
-		sb.append(';');
+		sb.append(";");
 		sb.append(this.documento);
-		sb.append(';');
+		sb.append(";");
 		sb.append(this.porto);
 		return sb.toString();
 	}
 	
-	public abstract String retornaNavio(Integer id);
+	public abstract String retornaNavio();
 	
 	public Integer getId() {
 		return id;

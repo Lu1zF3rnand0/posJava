@@ -7,13 +7,16 @@ public class Cliente {
 	private String telefone;
 	private String email;
 	
+	protected static int cont;
 	
-	
+
 	public Cliente() {
+		this.id = cont++;
 		
 	}
 	
 	public Cliente(String nome, String cnpj, String telefone, String email) {
+		this();
 		this.nome= nome;
 		this.cnpj = cnpj;
 		this.telefone = telefone;

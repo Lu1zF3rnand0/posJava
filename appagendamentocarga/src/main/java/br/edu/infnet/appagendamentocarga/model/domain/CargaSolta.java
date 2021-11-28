@@ -10,9 +10,8 @@ public class CargaSolta extends Carga {
 	private boolean oog;
 	
 	@Override
-	public String retornaNavio(Integer id) {
-		// TODO Auto-generated method stub
-		return null;
+	public String retornaNavio() {
+		return "O navio da mercadoria "+this.mercadoria+" é o "+super.getNavio()+ "!";
 	}
 	
 	public CargaSolta(String navio, String documento, String porto) throws PortoInvalidoException {
@@ -22,6 +21,20 @@ public class CargaSolta extends Carga {
 			throw new PortoInvalidoException("Código do porto inválido!");
 		}
 	}
+	
+	@Override
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		sb.append(";");
+		sb.append(this.mercadoria);
+		sb.append(";");
+		sb.append(this.imo);
+		sb.append(";");
+		sb.append(this.oog);
+		sb.toString();
+		return super.toString()+sb.toString();
+	}
+	
 	
 	public CargaSolta() {
 		// TODO Auto-generated constructor stub

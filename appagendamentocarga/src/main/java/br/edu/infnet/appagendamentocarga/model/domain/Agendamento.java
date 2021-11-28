@@ -13,6 +13,8 @@ public class Agendamento {
 	private Cliente cliente;
 	private List<Carga> cargas;
 	
+	protected static int cont;
+	
 	
 	@Override
 	public String toString() {
@@ -24,6 +26,7 @@ public class Agendamento {
 	
 	public Agendamento() {
 		data = LocalDateTime.now();
+		this.id = cont++;
 	}
 	
 	
