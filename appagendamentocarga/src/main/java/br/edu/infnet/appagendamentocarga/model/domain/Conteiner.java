@@ -22,6 +22,13 @@ public class Conteiner extends Carga {
 		}
 	}
 	
+	public Conteiner(String navio, String documento, String porto, String numero, int tamanho, String status) {
+		this();
+		this.numero = numero;
+		this.tamanho = tamanho;
+		this.status = status;
+	}
+	
 	@Override
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
