@@ -4,6 +4,7 @@ br\edu\infnet\appagendamentocarga\controller\AlunoController.class
 br\edu\infnet\appagendamentocarga\model\tests\ConteinerTest.class
 br\edu\infnet\appagendamentocarga\model\domain\Agendamento.class
 br\edu\infnet\appagendamentocarga\exceptions\TamanhoInvalidoException.class
+br\edu\infnet\appagendamentocarga\controller\ConteinerController.class
 br\edu\infnet\appagendamentocarga\model\domain\Veiculo.class
 br\edu\infnet\appagendamentocarga\model\tests\CargaSoltaTest.class
 br\edu\infnet\appagendamentocarga\exceptions\ChassiInvalidoException.class
