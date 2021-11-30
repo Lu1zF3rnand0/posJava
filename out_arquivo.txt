@@ -1,0 +1,3 @@
+TranspTest;HPG;O navio do conteiner MSCU123456 é o MSC TESTE!
+TranspTest;HPG;O navio do veiculo 9BGRD08X04G117971 é o MSC TESTE!
+TranspTest;HPG;O navio da mercadoria Tubos é o MSC TESTE!

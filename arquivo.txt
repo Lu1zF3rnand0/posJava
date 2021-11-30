@@ -1,0 +1,4 @@
+P;Importação;TranspTest;HPG;12.345.678/0001-00;21 1234-5678;hpg@hpg.com
+C;MSCU123456;Cheio;40
+V;9BGRD08X04G117971;Ford;Mustang
+CS;Tubos;false;true
