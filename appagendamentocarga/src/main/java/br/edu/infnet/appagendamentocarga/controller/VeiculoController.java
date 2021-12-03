@@ -32,6 +32,6 @@ public class VeiculoController {
 	public String incluir(Model model, Veiculo veiculo) {
 		veiculos.add(veiculo);
 		model.addAttribute("veiculo", veiculo.getChassi());
-		return "confirmacao";
+		return "veiculo/confirmacao";
 	}
 }

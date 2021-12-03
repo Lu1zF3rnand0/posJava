@@ -1,4 +1,3 @@
-<%@page import="br.edu.infnet.appagendamentocarga.model.domain.Aluno"%>
 <%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
@@ -6,7 +5,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>AppAgendamentoCarga</title>
+<title>Veiculos</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
@@ -31,7 +30,7 @@
         <a class="nav-link active" href="#">Veiculo</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Carga Solta</a>
+        <a class="nav-link" href="/cargas">Carga Solta</a>
       </li>
 <!--       <li class="nav-item"> -->
 <!--         <a class="nav-link disabled" href="#">Disabled</a> -->
@@ -52,6 +51,7 @@
 		      <tr>
 		        <th>Chassi</th>
 		        <th>Modelo</th>
+		        <th>Montadora</th>
 		      </tr>
 		    </thead>
 		    <tbody>
@@ -59,6 +59,7 @@
 		      <tr>
 		        <td>${a.chassi}</td>
 		        <td>${a.modelo}</td>
+		        <td>${a.montadora}</td>
 		      </tr>
 		      </c:forEach>
 		    </tbody>

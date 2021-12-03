@@ -25,10 +25,10 @@
         <a class="nav-link active" href="#">Conteiner</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Veiculo</a>
+        <a class="nav-link" href="/veiculos">Veiculo</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Carga Solta</a>
+        <a class="nav-link" href="/cargas">Carga Solta</a>
       </li>
 <!--       <li class="nav-item"> -->
 <!--         <a class="nav-link disabled" href="#">Disabled</a> -->

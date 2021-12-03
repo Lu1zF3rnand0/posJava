@@ -22,6 +22,13 @@ public class CargaSolta extends Carga {
 		}
 	}
 	
+	public CargaSolta(String navio, String documento, String porto, String mercadoria, boolean imo, boolean oog) {
+		this();
+		this.mercadoria = mercadoria;
+		this.imo = imo;
+		this.oog = oog;
+	}
+	
 	@Override
 	public String toString() {
 		StringBuilder sb = new StringBuilder();

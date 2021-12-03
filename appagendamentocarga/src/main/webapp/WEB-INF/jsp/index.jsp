@@ -28,7 +28,7 @@
         <a class="nav-link" href="/veiculos">Veiculo</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Carga Solta</a>
+        <a class="nav-link" href="/cargas">Carga Solta</a>
       </li>
 <!--       <li class="nav-item"> -->
 <!--         <a class="nav-link disabled" href="#">Disabled</a> -->
@@ -40,9 +40,10 @@
 <div class="container mt-3">
   <h2>AppAgendamentoCarga: Sistema de agendamento de cargas</h2>
   <h3>Luiz Fernando</h3>
+  <h4><a href="https://github.com/Lu1zF3rnand0/posJava">Projeto</a></h4>
   
   
-  <h4><a href="/conteineres" >Cadastramento de Conteineres</a></h4>
+  <!--  <h4>Cadastramento de Conteineres</h4>-->
 </div>
 
 

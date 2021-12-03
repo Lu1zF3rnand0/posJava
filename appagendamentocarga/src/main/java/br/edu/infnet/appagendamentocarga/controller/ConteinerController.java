@@ -32,6 +32,6 @@ public class ConteinerController {
 	public String incluir(Model model, Conteiner conteiner) {
 		conteineres.add(conteiner);
 		model.addAttribute("conteiner", conteiner.getNumero());
-		return "confirmacao";
+		return "conteiner/confirmacao";
 	}
 }

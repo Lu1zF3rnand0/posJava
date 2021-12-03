@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Cadastramento de Conteiner</title>
+<title>Cadastramento de Veiculo</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
@@ -22,13 +22,13 @@
         <a class="nav-link" href="#">Cliente</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Conteiner</a>
+        <a class="nav-link" href="/conteineres">Conteiner</a>
       </li>
       <li class="nav-item">
         <a class="nav-link active" href="#">Veiculo</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Carga Solta</a>
+        <a class="nav-link" href="/cargas">Carga Solta</a>
       </li>
 <!--       <li class="nav-item"> -->
 <!--         <a class="nav-link disabled" href="#">Disabled</a> -->
@@ -63,12 +63,12 @@
     
     <div class="mb-3 mt-3">
     <label>Montadora:</label>
-      <input type="text" class="form-control" placeholder="Entre com o tamanho do conteiner" name="montadora" value="ML 350">
+      <input type="text" class="form-control" placeholder="Entre com o tamanho do conteiner" name="montadora" value="Mercedes">
     </div>
        
     <div class="mb-3 mt-3">
     <label>Modelo:</label>
-      <input type="text" class="form-control" placeholder="Entre com o status do conteiner" name="modelo" value="Mercedes">
+      <input type="text" class="form-control" placeholder="Entre com o status do conteiner" name="modelo" value="ML 350">
     </div>
 
     <button type="submit" class="btn btn-primary">Cadastrar</button>
