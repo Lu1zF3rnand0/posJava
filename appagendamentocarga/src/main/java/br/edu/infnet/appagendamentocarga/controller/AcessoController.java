@@ -26,4 +26,9 @@ public class AcessoController {
 		}
 
 	}
+	
+	@GetMapping(value = "/index")
+	public String telaInicial() {
+		return "index";
+	}
 }

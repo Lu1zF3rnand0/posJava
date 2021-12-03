@@ -9,11 +9,14 @@
 <body>
 
 	<div class="container mt-3">
-	  <h2>O conteiner ${conteiner} foi cadastrado com sucesso!!!</h2>
+	
+      <div class="alert alert-success">
+      	<strong>Success!</strong> O conteiner ${conteiner} foi cadastrado com sucesso!!!
+  	  </div>
 
-  <form action="/conteineres" method="get">
-    <button type="submit" class="btn btn-primary">Voltar</button>
-  </form>
+  	<form action="/conteineres" method="get">
+    	<button type="submit" class="btn btn-primary">Voltar</button>
+  	</form>
 </div>
 
 

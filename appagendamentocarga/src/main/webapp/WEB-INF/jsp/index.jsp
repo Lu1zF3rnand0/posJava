@@ -8,6 +8,34 @@
 </head>
 <body>
 
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">
+    <ul class="navbar-nav">
+    
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Página Inicial</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Agendamento</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Cliente</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/conteineres">Conteiner</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Veiculo</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Carga Solta</a>
+      </li>
+<!--       <li class="nav-item"> -->
+<!--         <a class="nav-link disabled" href="#">Disabled</a> -->
+<!--       </li> -->
+    </ul>
+  </div>
+</nav>
 
 <div class="container mt-3">
   <h2>AppAgendamentoCarga: Sistema de agendamento de cargas</h2>

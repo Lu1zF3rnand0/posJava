@@ -11,19 +11,42 @@
 </head>
 <body>
 
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">
+    <ul class="navbar-nav">
+    
+      <li class="nav-item">
+        <a class="nav-link" href="/index">Página Inicial</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Agendamento</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Cliente</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Conteiner</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Veiculo</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Carga Solta</a>
+      </li>
+<!--       <li class="nav-item"> -->
+<!--         <a class="nav-link disabled" href="#">Disabled</a> -->
+<!--       </li> -->
+    </ul>
+  </div>
+</nav>
+
 	<div class="container mt-3">
 	  <h2> Cadastramento de Conteineres</h2>
-	 
-	  <form action="conteiner" method="get">
-	    <button type="submit" class="btn btn-primary">Novo</button>
-	  </form>
-	  
+	 	  
 	  <hr>
 	  
 	   <c:if test="${not empty lista}">
-	  
-		  <h2>Total de conteineres: ${lista.size()}</h2>
-		  
+	    
 		  <table class="table table-striped">
 		    <thead>
 		      <tr>
@@ -39,13 +62,20 @@
 		      </tr>
 		      </c:forEach>
 		    </tbody>
-		  </table>	
+		  </table>
+		  <h4>Total de conteineres: ${lista.size()}</h4>	
 	  </c:if>  
-	  
+	    
 	  <c:if test="${empty lista}">
-	  	<h2>Não existem conteineres cadastrados!!!</h2>
+	  	<h4>Não existem conteineres cadastrados!!!</h4>
 	  </c:if>
 	   
+	</div>
+	
+	<div class="container mt-3" align = "right">
+	  <form action="conteiner" method="get">
+	    <button type="submit" class="btn btn-primary">Novo</button>
+	  </form>
 	</div>
 
 </body>
