@@ -38,7 +38,7 @@
 </nav>
 
 <div class="container mt-3">
-  <h2>Cadastramento de conteineres</h2>
+  <h2>Cadastramento de Conteineres</h2>
   
   <form action="/conteiner/incluir" method="post">
     <div class="mb-3 mt-3">

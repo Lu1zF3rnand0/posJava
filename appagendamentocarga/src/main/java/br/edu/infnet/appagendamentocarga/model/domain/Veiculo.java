@@ -15,6 +15,22 @@ public class Veiculo extends Carga {
 		return "O navio do veiculo "+this.chassi+" é o "+super.getNavio()+ "!";
 	}
 	
+	public Veiculo(String navio, String documento, String porto) throws PortoInvalidoException {
+		super(navio, documento, porto);
+		
+		if (porto.length() != 5) {
+			throw new PortoInvalidoException("Código do porto inválido!");
+		}
+	}
+		
+	
+	public Veiculo(String navio, String documento, String porto, String chassi, String montadora, String modelo) {
+		this();
+		this.chassi = chassi;
+		this.montadora = montadora;
+		this.modelo = modelo;
+	}
+	
 	
 	@Override
 	public String toString() {
@@ -28,14 +44,7 @@ public class Veiculo extends Carga {
 		return super.toString()+sb.toString();
 	}
 	
-	public Veiculo(String navio, String documento, String porto) throws PortoInvalidoException {
-		super(navio, documento, porto);
-		
-		if (porto.length() != 5) {
-			throw new PortoInvalidoException("Código do porto inválido!");
-		}
-	}
-	
+
 	public Veiculo() {
 		// TODO Auto-generated constructor stub
 	}

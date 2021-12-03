@@ -14,7 +14,7 @@
       	<strong>Success!</strong> O conteiner ${conteiner} foi cadastrado com sucesso!!!
   	  </div>
 
-  	<form action="/conteineres" method="get">
+  	<form action="/index" method="get">
     	<button type="submit" class="btn btn-primary">Voltar</button>
   	</form>
 </div>
