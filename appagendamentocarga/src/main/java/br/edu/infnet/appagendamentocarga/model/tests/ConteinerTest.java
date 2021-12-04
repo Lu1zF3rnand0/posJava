@@ -11,8 +11,8 @@ public class ConteinerTest {
 		try {
 			Conteiner conteiner = new Conteiner("MSC TESTE", "21/123456-7", "BRRIO");
 			conteiner.setNumero("MSCU123456");
-			conteiner.setStatus("Cheio");
-			conteiner.setTamanho(40);
+			conteiner.setStatus("Vazio");
+			conteiner.setTamanho(20);
 			System.out.println(conteiner.toString());
 			System.out.println(conteiner.retornaNavio());
 			System.out.println(conteiner.getId());
@@ -23,8 +23,8 @@ public class ConteinerTest {
 		
 		
 		try {
-			Conteiner conteiner = new Conteiner("MSC TESTE", "21/123456-7", "BRRIO");
-			conteiner.setNumero("MSCU123456");
+			Conteiner conteiner = new Conteiner("MSC TESTE", "21/123456-7", "BRRI");
+			conteiner.setNumero("MSCU654321");
 			conteiner.setStatus("Cheio");
 			conteiner.setTamanho(40);
 			System.out.println(conteiner.toString());

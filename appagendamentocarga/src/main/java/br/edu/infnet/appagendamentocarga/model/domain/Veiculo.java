@@ -17,10 +17,7 @@ public class Veiculo extends Carga {
 	
 	public Veiculo(String navio, String documento, String porto) throws PortoInvalidoException {
 		super(navio, documento, porto);
-		
-		if (porto.length() != 5) {
-			throw new PortoInvalidoException("Código do porto inválido!");
-		}
+
 	}
 		
 	
