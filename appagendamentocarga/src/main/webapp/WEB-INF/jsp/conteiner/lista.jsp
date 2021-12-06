@@ -10,34 +10,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <div class="container-fluid">
-    <ul class="navbar-nav">
-    
-      <li class="nav-item">
-        <a class="nav-link" href="/index">Página Inicial</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Agendamento</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Cliente</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" href="#">Conteiner</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/veiculos">Veiculo</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/cargas">Carga Solta</a>
-      </li>
-<!--       <li class="nav-item"> -->
-<!--         <a class="nav-link disabled" href="#">Disabled</a> -->
-<!--       </li> -->
-    </ul>
-  </div>
-</nav>
+	<c:import url="/WEB-INF/jsp/menu.jsp"/>
 
 	<div class="container mt-3">
 	  <h2> Cadastramento de Conteineres</h2>

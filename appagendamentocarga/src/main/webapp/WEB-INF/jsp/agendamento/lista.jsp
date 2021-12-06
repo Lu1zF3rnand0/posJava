@@ -11,6 +11,8 @@
 </head>
 <body>
 
+	<c:import url="/WEB-INF/jsp/menu.jsp"/>
+
 	<div class="container mt-3">
 	  <h2> Cadastramento de Alunos</h2>
 	 

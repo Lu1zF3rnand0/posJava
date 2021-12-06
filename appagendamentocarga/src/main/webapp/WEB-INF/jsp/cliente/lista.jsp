@@ -11,8 +11,10 @@
 </head>
 <body>
 
+	<c:import url="/WEB-INF/jsp/menu.jsp"/>
+
 	<div class="container mt-3">
-	  <h2> Cadastramento de Alunos</h2>
+	  <h2> Cadastramento de Clientes</h2>
 	 
 	  <form action="aluno" method="get">
 	    <button type="submit" class="btn btn-primary">Novo</button>
