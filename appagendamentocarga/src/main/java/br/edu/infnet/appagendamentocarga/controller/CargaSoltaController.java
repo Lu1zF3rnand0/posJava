@@ -32,7 +32,7 @@ public class CargaSoltaController {
 	@PostMapping(value = "/carga/incluir")
 	public String incluir(Model model, CargaSolta carga) {
 		cargas.add(carga);
-		model.addAttribute("carga", carga.getMercadoria());
-		return "cargaSolta/confirmacao";
+		model.addAttribute("mensagem", "A carga solta "+carga.getMercadoria()+" foi cadastrada com sucesso!!!");
+		return telaLista(model);
 	}
 }

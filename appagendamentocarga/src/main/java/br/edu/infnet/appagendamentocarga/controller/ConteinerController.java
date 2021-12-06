@@ -31,7 +31,7 @@ public class ConteinerController {
 	@PostMapping(value = "/conteiner/incluir")
 	public String incluir(Model model, Conteiner conteiner) {
 		conteineres.add(conteiner);
-		model.addAttribute("conteiner", conteiner.getNumero());
-		return "conteiner/confirmacao";
+		model.addAttribute("mensagem", "O conteiner "+conteiner.getNumero()+" foi cadastrado com sucesso!!!");
+		return telaLista(model);
 	}
 }

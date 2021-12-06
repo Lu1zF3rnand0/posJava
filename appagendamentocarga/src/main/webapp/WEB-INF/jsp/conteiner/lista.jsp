@@ -6,7 +6,8 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Conteineres</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<!--   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
 <body>
 
@@ -14,8 +15,14 @@
 
 	<div class="container mt-3">
 	  <h2> Cadastramento de Conteineres</h2>
+	  
+	   <hr>
 	 	  
-	  <hr>
+	  <c:if test="${not empty mensagem}">
+		<div class="alert alert-success">
+		  <strong>Confirmação!</strong> ${mensagem}
+		</div>	  
+	  </c:if>
 	  
 	   <c:if test="${not empty lista}">
 	    
@@ -47,7 +54,7 @@
 	</div>
 	
 	<div class="container mt-3" align = "right">
-	  <form action="conteiner" method="get">
+	  <form action="/conteiner" method="get">
 	    <button type="submit" class="btn btn-primary">Novo</button>
 	  </form>
 	</div>

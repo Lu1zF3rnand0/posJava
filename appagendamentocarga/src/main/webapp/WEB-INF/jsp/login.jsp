@@ -22,12 +22,12 @@
 	  
 	  <h2>Autenticação</h2>
 	  <form action="/login" method="post">
-	    <div class="mb-3 mt-3">
+	    <div class="mb-3 mt-3" style="margin-bottom:20px">
 	      <label>E-mail:</label>
-	      <input type="email" class="form-control" placeholder="Entre com o seu e-mail" name="email" value="luiz@gmail.com">
-	    </div>
+	      <input type="email" style="margin-bottom:10px" class="form-control" placeholder="Entre com o seu e-mail" name="email" value="luiz@gmail.com">
+	   
 
-	    <div class="mb-3">
+	    
 	      <label>Senha:</label>
 	      <input type="password" class="form-control" placeholder="Entre com a sua senha" name="senha" value="luiz@gmail.com">
 	    </div>

@@ -31,7 +31,8 @@ public class VeiculoController {
 	@PostMapping(value = "/veiculo/incluir")
 	public String incluir(Model model, Veiculo veiculo) {
 		veiculos.add(veiculo);
-		model.addAttribute("veiculo", veiculo.getChassi());
-		return "veiculo/confirmacao";
+		model.addAttribute("mensagem", "O veiculo "+veiculo.getChassi()+" foi cadastrado com sucesso!!!");
+		
+		return telaLista(model);
 	}
 }

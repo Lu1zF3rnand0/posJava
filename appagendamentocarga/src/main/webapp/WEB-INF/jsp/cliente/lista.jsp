@@ -6,8 +6,9 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>AppMIT</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<title>Clientes</title>
+<!--   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
 <body>
 
@@ -15,22 +16,18 @@
 
 	<div class="container mt-3">
 	  <h2> Cadastramento de Clientes</h2>
-	 
-	  <form action="aluno" method="get">
-	    <button type="submit" class="btn btn-primary">Novo</button>
-	  </form>
-	  
+	 	  
 	  <hr>
 	  
-	   <c:if test="${not empty lista}">
-	  
-		  <h2>Total de alunos: ${lista.size()}</h2>
-		  
+	   <c:if test="${not empty lista}">		
+	     
 		  <table class="table table-striped">
 		    <thead>
 		      <tr>
 		        <th>Nome</th>
 		        <th>E-mail</th>
+		        <th>Telefone</th>
+		        <th>CNPJ</th>
 		      </tr>
 		    </thead>
 		    <tbody>
@@ -38,16 +35,26 @@
 		      <tr>
 		        <td>${a.nome}</td>
 		        <td>${a.email}</td>
+		        <td>${a.telefone}</td>
+		        <td>${a.cnpj}</td>
 		      </tr>
 		      </c:forEach>
 		    </tbody>
 		  </table>	
+		  <h4>Total de Clientes: ${lista.size()}</h4>
+		  
 	  </c:if>  
 	  
 	  <c:if test="${empty lista}">
-	  	<h2>Não existem alunos cadastrados!!!</h2>
+	  	<h4>Não existem clientes cadastrados!!!</h4>
 	  </c:if>
 	   
+	</div>
+	
+	<div class="container mt-3" align = "right">
+		<form action="/cliente" method="get" >
+			<button type="submit" class="btn btn-primary">Novo</button>
+		</form>
 	</div>
 
 </body>

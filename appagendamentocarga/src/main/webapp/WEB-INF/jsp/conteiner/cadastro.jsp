@@ -4,8 +4,9 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Cadastramento de Conteiner</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<title>Cadastro de Conteiner</title>
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
 <body>
 
@@ -13,6 +14,12 @@
 	
 	<div class="container mt-3">
 	  <h2>Cadastramento de Conteineres</h2>
+	  
+	  <c:if test="${not empty mensagem}">
+		<div class="alert alert-success">
+		  <strong>Confirmação!</strong> ${mensagem}
+		</div>	  
+	  </c:if>
 	  
 	  <form action="/conteiner/incluir" method="post">
 	    <div class="mb-3 mt-3">

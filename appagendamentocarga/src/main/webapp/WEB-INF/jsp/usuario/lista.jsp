@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>AppMIT</title>
+<title>Usuários</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
 <body>
@@ -13,10 +13,11 @@
 
 	<div class="container mt-3">
 	  <h2>Cadastramento de Usuários</h2>
+	  
+	   <hr>
 
 	<c:if test="${not empty lista}">		
-		<h2>Total de Usuários: ${lista.size()}</h2>
-		  
+				  
 		<table class="table table-striped">
 		    <thead>
 		      <tr>
@@ -44,6 +45,7 @@
 		      </c:forEach>		      
 		    </tbody>
 	  	</table>
+	  	<h4>Total de Usuários: ${lista.size()}</h4>
     </c:if>	  	  
 
 	<c:if test="${empty lista}">		

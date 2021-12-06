@@ -3,7 +3,7 @@
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">AppAgendamentoCarga</a>
+      <a class="navbar-brand" href="/">AppAgendamentoCarga</a>
     </div>
     <ul class="nav navbar-nav">
     
@@ -11,7 +11,7 @@
       
       <c:if test="${not empty user}">
 	      <li><a href="/usuarios">Usuário</a></li>
-	      <li><a href="/Clientes">Cliente</a></li>
+	      <li><a href="/clientes">Cliente</a></li>
 	      <li><a href="#">Carga</a></li>
 	      <li><a href="/conteineres">Conteiner</a></li>
 	      <li><a href="/veiculos">Veiculo</a></li>
